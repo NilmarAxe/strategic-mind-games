@@ -1,0 +1,28 @@
+[package]
+name = "strategic-mind-optimizer"
+version = "1.0.0"
+edition = "2021"
+authors = ["Strategic Mind Games Team"]
+
+[lib]
+name = "strategic_mind_optimizer"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rayon = "1.8"
+rand = "0.8"
+
+# JNI dependency (optional)
+jni = { version = "0.21", optional = true }
+
+[features]
+default = []
+jni = ["dep:jni"]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"

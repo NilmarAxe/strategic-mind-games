@@ -1,0 +1,38 @@
+server:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+
+ai:
+  model_path: "models/trained_model.pkl"
+  scaler_path: "models/scaler.pkl"
+  training_data_path: "data/training_data.csv"
+  
+  difficulty_levels:
+    easy:
+      bluff_threshold: 0.3
+      challenge_threshold: 0.7
+      risk_tolerance: 0.2
+    medium:
+      bluff_threshold: 0.5
+      challenge_threshold: 0.6
+      risk_tolerance: 0.5
+    hard:
+      bluff_threshold: 0.7
+      challenge_threshold: 0.5
+      risk_tolerance: 0.7
+    ruthless:
+      bluff_threshold: 0.85
+      challenge_threshold: 0.4
+      risk_tolerance: 0.9
+
+training:
+  test_size: 0.2
+  random_state: 42
+  n_estimators: 200
+  max_depth: 15
+  min_samples_split: 5
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

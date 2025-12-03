@@ -1,0 +1,379 @@
+# ============================================
+# Strategic Mind Games - Complete .gitignore
+# ============================================
+
+# ============================================
+# Java / Maven
+# ============================================
+java-frontend/target/
+java-frontend/.classpath
+java-frontend/.project
+java-frontend/.settings/
+java-frontend/.factorypath
+java-frontend/bin/
+java-frontend/dependency-reduced-pom.xml
+
+# Maven wrapper
+java-frontend/.mvn/timing.properties
+java-frontend/.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+java-frontend/.idea/
+java-frontend/*.iml
+java-frontend/*.ipr
+java-frontend/*.iws
+java-frontend/out/
+
+# Eclipse
+java-frontend/.metadata
+java-frontend/.recommenders
+
+# NetBeans
+java-frontend/nbproject/
+java-frontend/nbbuild/
+java-frontend/nbdist/
+java-frontend/.nb-gradle/
+
+# ============================================
+# Rust
+# ============================================
+rust-optimizer/target/
+rust-optimizer/Cargo.lock
+rust-optimizer/**/*.rs.bk
+rust-optimizer/*.pdb
+
+# ============================================
+# Python
+# ============================================
+# Virtual environments
+python-ai/venv/
+python-ai/env/
+python-ai/ENV/
+python-ai/.venv/
+
+# Python cache
+python-ai/__pycache__/
+python-ai/**/__pycache__/
+python-ai/**/*.pyc
+python-ai/**/*.pyo
+python-ai/**/*.pyd
+python-ai/.Python
+
+# Distribution / packaging
+python-ai/build/
+python-ai/develop-eggs/
+python-ai/dist/
+python-ai/downloads/
+python-ai/eggs/
+python-ai/.eggs/
+python-ai/lib/
+python-ai/lib64/
+python-ai/parts/
+python-ai/sdist/
+python-ai/var/
+python-ai/wheels/
+python-ai/*.egg-info/
+python-ai/.installed.cfg
+python-ai/*.egg
+python-ai/MANIFEST
+
+# PyInstaller
+python-ai/*.manifest
+python-ai/*.spec
+
+# Unit test / coverage reports
+python-ai/htmlcov/
+python-ai/.tox/
+python-ai/.coverage
+python-ai/.coverage.*
+python-ai/.cache
+python-ai/nosetests.xml
+python-ai/coverage.xml
+python-ai/*.cover
+python-ai/.hypothesis/
+python-ai/.pytest_cache/
+
+# Jupyter Notebook
+python-ai/.ipynb_checkpoints
+
+# pyenv
+python-ai/.python-version
+
+# Environments
+python-ai/.env
+python-ai/.venv
+python-ai/env/
+python-ai/venv/
+python-ai/ENV/
+python-ai/env.bak/
+python-ai/venv.bak/
+
+# Spyder project settings
+python-ai/.spyderproject
+python-ai/.spyproject
+
+# Rope project settings
+python-ai/.ropeproject
+
+# mkdocs documentation
+python-ai/site
+
+# mypy
+python-ai/.mypy_cache/
+python-ai/.dmypy.json
+python-ai/dmypy.json
+
+# Trained models (KEEP ONLY FINAL VERSIONS)
+python-ai/models/*.pkl
+python-ai/models/*.joblib
+python-ai/models/temp_*.pkl
+!python-ai/models/.gitkeep
+
+# Training data (if large)
+python-ai/data/raw/
+python-ai/data/processed/
+python-ai/data/*.csv
+!python-ai/data/training_data.csv
+
+# ============================================
+# Build outputs
+# ============================================
+dist/
+build/
+*.jar
+*.war
+*.ear
+*.class
+
+# Native libraries
+*.so
+*.dylib
+*.dll
+lib/*.so
+lib/*.dylib
+lib/*.dll
+
+# ============================================
+# Logs
+# ============================================
+logs/
+*.log
+*.log.*
+log/
+python-ai/*.log
+java-frontend/logs/
+rust-optimizer/*.log
+
+# Keep logs directory
+!logs/.gitkeep
+
+# ============================================
+# IDE / Editors
+# ============================================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Visual Studio Code
+.vscode/
+.history/
+*.code-workspace
+
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# OS Files
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# Temporary files
+# ============================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+.#*
+\#*\#
+
+# ============================================
+# Compiled source
+# ============================================
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.dylib
+
+# ============================================
+# Archives
+# ============================================
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ============================================
+# Database
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================
+# Configuration files with secrets
+# ============================================
+config.local.properties
+config.local.yaml
+secrets.yaml
+.env.local
+.env.production
+.env.*.local
+
+# Keep example configs
+!config.example.properties
+!config.example.yaml
+
+# ============================================
+# Test outputs
+# ============================================
+test-output/
+test-reports/
+coverage/
+.nyc_output/
+
+# ============================================
+# Documentation build
+# ============================================
+docs/_build/
+docs/.doctrees/
+site/
+
+# ============================================
+# Package manager files
+# ============================================
+node_modules/
+package-lock.json
+yarn.lock
+
+# ============================================
+# Certificates & Keys
+# ============================================
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.jks
+*.keystore
+
+# ============================================
+# Custom application files
+# ============================================
+# Game save files (if implemented)
+saves/
+save_*.dat
+
+# User preferences (if implemented)
+preferences.json
+user_settings.json
+
+# Cache directories
+cache/
+.cache/
+tmp/
+temp/
+
+# ============================================
+# CI/CD
+# ============================================
+.github/workflows/*.log
+.gitlab-ci-local/
+
+# ============================================
+# Keep important empty directories
+# ============================================
+!**/.gitkeep
+
+# ============================================
+# Project specific
+# ============================================
+# Keep only necessary model files
+!python-ai/models/trained_model.pkl
+!python-ai/models/scaler.pkl
+
+# Keep example data
+!python-ai/data/training_data.csv
+
+# Keep documentation
+!README.md
+!LICENSE
+!CONTRIBUTING.md
